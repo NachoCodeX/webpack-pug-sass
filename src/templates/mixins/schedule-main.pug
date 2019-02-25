@@ -1,0 +1,13 @@
+include ./schedule-subject.pug
+
+
+mixin scheduleMain
+    div(class="schedule-grid-main")
+        +scheduleSubject("ISI81","PROG. LOGICA Y F.S","SIN PROFESOR ASIGNADO","A","4",[{},{},{"time":"7:00-19:00","classroom":"LC4"},{},{"time":"7:00-19:00","classroom":"LC4"}])
+        +scheduleSubject("ISI82","ADMON. REDES","SIN PROFESOR ASIGNADO","A","4",[{},{},{"time":"13:00-15:00","classroom":"CISCO"},{"time":"12:00-14:00","classroom":"CISCO"},{}])
+        +scheduleSubject("ISI83","TALL. DE INVEST. II","SIN PROFESOR ASIGNADO","A","4",[{},{},{"time":"15:00-17:00","classroom":"A6"},{},{"time":"15:00-17:00","classroom":"A6"}])
+        
+        +scheduleSubject("ISI84","PROG. WEB.","SIN PROFESOR ASIGNADO","A","4",[{},{"time":"10:00-12:00","classroom":"LC2"},{"time":"12:00-13:00","classroom":"LC2"},{"time":"09:00-11:00","classroom":"LC2"},{}])
+        +scheduleSubject("ISI85","DES. APLIC. DISP. MOVILES","SIN PROFESOR ASIGNADO","A","4",[{"time":"08:00-10:00","classroom":"LC2"},{},{},{"time":"08:00-10:00","classroom":"LC2"},{"time":"13:00-15:00","classroom":"LC2"}])
+        +scheduleSubject("ISI86","COMPUTO FORENSE","SIN PROFESOR ASIGNADO","A","4",[{"time":"10:00-12:00","classroom":"LC5"},{"time":"12:00-14:00","classroom":"LRED"},{},{"time":"11:00-12:00","classroom":"LC3"},{}])
+        +scheduleSubject("ISI87","SERVICIO SOCIAL","SIN PROFESOR ASIGNADO","A","4",[{},{},{"time":"7:00-11:00","classroom":"AV5"},{},{"time":"07:00-11:00","classroom":"AV5"}])

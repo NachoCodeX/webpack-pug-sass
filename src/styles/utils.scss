@@ -1,0 +1,82 @@
+@import './variables';
+
+.bg-primary{background: getColor('primary');}
+.bg-secondary{background: getColor('secondary');}
+
+.circle{border-radius: 50%;}
+.text-{
+  &link{
+    color: #eee;
+    transition: all ease-in-out .4s;
+    margin-left: 10px;
+    &:hover{
+      color: lighten(getColor('secondary'), 30%);
+    }
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+ 
+
+  .n-{
+    &p{
+        &a-{
+            &xs{padding: 5px; background: red;}
+            &sm{padding: 15px;}
+            &md{padding: 20px;}
+            &lg{padding: 40px;}
+            &xlg{padding: 60px;}
+        }
+    }
+    &m{
+        &a-{
+            &xs{margin: 5px;}
+            &sm{margin: 15px;}
+            &md{margin: 20px;}
+            &lg{margin: 40px;}
+        }
+        &b-{
+            &xs{margin-bottom: 5px;}
+            &sm{margin-bottom: 15px;}
+            &md{margin-bottom: 20px;}
+            &lg{margin-bottom: 40px;}
+        }
+        &t-{
+            &xs{margin-top: 5px;}
+            &sm{margin-top: 15px;}
+            &md{margin-top: 20px;}
+            &lg{margin-top: 40px;}
+        }
+        &l-{
+            &xs{margin-left: 5px;}
+            &sm{margin-left: 15px;}
+            &md{margin-left: 20px;}
+            &lg{margin-left: 40px;}
+        }
+        &r-{
+            &xs{margin-right: 5px;}
+            &sm{margin-right: 15px;}
+            &md{margin-right: 20px;}
+            &lg{margin-right: 40px;}
+        }
+    }
+}

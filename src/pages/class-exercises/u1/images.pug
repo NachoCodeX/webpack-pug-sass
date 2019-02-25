@@ -1,0 +1,23 @@
+extends ../../../templates/base.pug
+include ../../../templates/mixins/header.pug
+include ../../../templates/mixins/footer.pug
+block wrapper
+    div(class="wrapper")
+        block header
+            +header()(class="header--primary")
+        block content
+            main(class="main main--fill")
+                div(class="main__header")
+                    h1 Imagenes
+                div(class="flex flex-center")
+                    figure.mar
+                        img(class="img img--size-sm" src='/public/img/mars.png', alt='mars')
+                        figcaption Mars png
+                    figure.dog
+                        img(class="img img--size-sm" src='/public/img/saturn.gif', alt='saturn')
+                        figcaption saturn gif
+                    figure.dog
+                        img(class="img img--size-sm" src='/public/img/earth.png', alt='earth')
+                        figcaption Earth jpg
+        block footer
+            +footer

@@ -1,0 +1,24 @@
+extends ../../../templates/base.pug
+include ../../../templates/mixins/header.pug
+include ../../../templates/mixins/schedule-item.pug
+include ../../../templates/mixins/schedule-header.pug
+include ../../../templates/mixins/schedule-main.pug
+include ../../../templates/mixins/schedule-footer.pug
+include ../../../templates/mixins/footer.pug
+
+
+block wrapper
+    div(class="wrapper")
+    block header
+        +header()(class="header--homework3")
+    block content
+        div(class="main")
+            div(class="main__header")
+                h1(class="main__header__title") Schedule
+            div(class="schedule-wrapper")
+                div(class="schedule-grid")
+                    +scheduleHeader
+                    +scheduleMain
+
+    block footer
+        +footer

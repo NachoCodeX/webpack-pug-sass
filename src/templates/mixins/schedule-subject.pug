@@ -1,0 +1,32 @@
+mixin scheduleSubject(code,name,teacher,group,credits,schedule)
+        li(class="schedule-item flex flex-column") 
+            span.text-white.schedule-item__text= code 
+            span.text-white.schedule-item__text= name 
+            span.text-white.schedule-item__text= teacher
+        li(class="schedule-item") 
+            span.text-white.schedule-item__text.flex.flex-center= group 
+        li(class="schedule-item") 
+            span.text-white.schedule-item__text.flex.flex-center= credits
+        
+
+        for c in schedule
+            li(class="schedule-item schedule-item--normal") 
+                div.flex.flex-column.flex-center
+                    span.text-white.schedule-item__text=  c.time
+                    span.text-white.schedule-item__text= c.classroom
+            //- li(class="schedule-item schedule-item--normal")
+            //-     div.flex.flex-column.flex-center
+            //-         span.text-white.schedule-item__text 7:00-19:00
+            //-         span.text-white.schedule-item__text LC4
+            //- li(class="schedule-item schedule-item--normal")
+            //-     div.flex.flex-column.flex-center
+            //-         span.text-white.schedule-item__text 7:00-19:00
+            //-         span.text-white.schedule-item__text LC4
+            //- li(class="schedule-item schedule-item--normal")
+            //-     div.flex.flex-column.flex-center
+            //-         span.text-white.schedule-item__text 7:00-19:00
+            //-         span.text-white.schedule-item__text LC4
+            //- li(class="schedule-item schedule-item--normal")
+            //-     div.flex.flex-column.flex-center
+            //-         span.text-white.schedule-item__text 7:00-19:00
+            //-         span.text-white.schedule-item__text LC4

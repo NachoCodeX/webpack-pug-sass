@@ -1,0 +1,282 @@
+extends ../../../templates/base.pug
+include ../../../templates/mixins/header.pug
+include ../../../templates/mixins/footer.pug
+
+block wrapper
+    div(class="wrapper")
+        block header
+            +header()(class="header--secondary")
+        block content
+            main(class="main")
+                div(class="main__header")
+                    h1 
+                        |Style Matrix
+                        i(class="text-link fas fa-link")
+                div(class="flex flex-center")
+                    table(class="table")
+                        tbody
+                            tr()
+                                th(rowspan='1')
+                                th Negritas
+                                th Cursiva
+                                th Subrayado
+                                th Tachado
+                                th Resaltado
+                                th Código
+                                th Letras pequeñas
+                                th Subíndices
+                                th Superíndices
+                            tr(align='center')
+                                td() Negritas
+                                td
+                                    strong Texto
+                                td
+                                    strong
+                                        em Texto
+                                td
+                                    strong
+                                        u Texto
+                                td
+                                    strong
+                                        s Texto
+                                td
+                                    strong
+                                        mark Texto
+                                td
+                                    strong
+                                        code Texto
+                                td
+                                    strong
+                                        small Texto
+                                td
+                                    strong
+                                        sub Texto
+                                td
+                                    strong
+                                        sup Texto
+                            tr(align='center')
+                                td() Cursiva
+                                td
+                                    em
+                                        strong Texto
+                                td
+                                    em Texto
+                                td
+                                    em
+                                        u Texto
+                                td
+                                    em
+                                        s Texto
+                                td
+                                    em
+                                        mark Texto
+                                td
+                                    em
+                                        code Texto
+                                td
+                                    em
+                                        small Texto
+                                td
+                                    em
+                                        sub Texto
+                                td
+                                    em
+                                        sup Texto
+                            tr(align='center')
+                                td() Subrayado
+                                td
+                                    u
+                                        strong Texto
+                                td
+                                    u
+                                        em Texto
+                                td
+                                    u Texto
+                                td
+                                    u
+                                        s Texto
+                                td
+                                    u
+                                        mark Texto
+                                td
+                                    u
+                                        code Texto
+                                td
+                                    u
+                                        small Texto
+                                td
+                                    u
+                                        sub Texto
+                                td
+                                    u
+                                        sup Texto
+                            tr(align='center')
+                                td() Tachado
+                                td
+                                    s
+                                        strong Texto
+                                td
+                                    s
+                                        em Texto
+                                td
+                                    s
+                                        u Texto
+                                td
+                                    s Texto
+                                td
+                                    s
+                                        mark Texto
+                                td
+                                    s
+                                        code Texto
+                                td
+                                    s
+                                        small Texto
+                                td
+                                    s
+                                        sub Texto
+                                td
+                                    s
+                                        sup Texto
+                            tr(align='center')
+                                td() Resaltado
+                                td
+                                    mark
+                                        strong Texto
+                                td
+                                    mark
+                                        i Texto
+                                td
+                                    mark
+                                        u Texto
+                                td
+                                    mark
+                                        s Texto
+                                td
+                                    mark Texto
+                                td
+                                    mark
+                                        code Texto
+                                td
+                                    mark
+                                        small Texto
+                                td
+                                    mark
+                                        sub Texto
+                                td
+                                    mark
+                                        sup Textos
+                            tr(align='center')
+                                td() Código
+                                td
+                                    code
+                                        strong Texto
+                                td
+                                    code
+                                        i Texto
+                                td
+                                    code
+                                        u Texto
+                                td
+                                    code
+                                        s Texto
+                                td
+                                    code
+                                        mark Texto
+                                td
+                                    code Texto
+                                td
+                                    code
+                                        small Texto
+                                td
+                                    code
+                                        sub Texto
+                                td
+                                    code
+                                        sup Texto
+                            tr(align='center')
+                                td() Letras pequeñas
+                                td
+                                    small
+                                        strong Texto
+                                td
+                                    small
+                                        i Texto
+                                td
+                                    small
+                                        u Texto
+                                td
+                                    small
+                                        s Texto
+                                td
+                                    small
+                                        mark Texto
+                                td
+                                    small
+                                        code Texto
+                                td
+                                    small Texto
+                                td
+                                    small
+                                        sub Texto
+                                td
+                                    small
+                                        sup Texto
+                            tr(align='center')
+                                td() Subíndices
+                                td
+                                    sub
+                                        strong Texto
+                                td
+                                    sub
+                                        i Texto
+                                td
+                                    sub
+                                        u Texto
+                                td
+                                    sub
+                                        s Texto
+                                td
+                                    sub
+                                        mark Texto
+                                td
+                                    sub
+                                        code Texto
+                                td
+                                    sub
+                                        small Texto
+                                td
+                                    sub Texto
+                                td
+                                    sub
+                                        sup Texto
+                            tr(align='center')
+                                td() Superíndice
+                                td
+                                    sup
+                                        strong Texto
+                                td
+                                    sup
+                                        i Texto
+                                td
+                                    sup
+                                        u Texto
+                                td
+                                    sup
+                                        s Texto
+                                td
+                                    sup
+                                        mark Texto
+                                td
+                                    sup
+                                        code Texto
+                                td
+                                    sup
+                                        small Texto
+                                td
+                                    sup
+                                        sub Texto
+                                td
+                                    sup Texto
+        block footer
+            +footer

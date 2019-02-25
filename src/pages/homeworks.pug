@@ -1,0 +1,14 @@
+extends ../templates/base.pug
+include ../templates/mixins/header.pug
+include ../templates/mixins/footer.pug
+block wrapper
+    div(class="wrapper")
+        block header
+            +header()(class="header--secondary")
+        block content
+            main(class="main")
+                div(class="main__header") 
+                    h1 Homeworks
+                include ../templates/homeworks.pug
+        block footer
+            +footer

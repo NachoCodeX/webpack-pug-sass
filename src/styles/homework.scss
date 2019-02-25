@@ -1,0 +1,77 @@
+@mixin createBox($color){
+    background: $color;
+    &:hover{
+        background: lighten($color, 5%);
+        box-shadow: 5px 10px 15px 3px rgba(#000,.3);
+        transform: scale(1.1);
+    }
+ 
+  
+}
+
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,.25fr);
+    // grid-template-rows: repeat(2,.5fr);
+    grid-auto-rows: 300px;
+    grid-gap: 5px;
+    /* width: 70vh; */
+    height: 100%;
+}
+
+.grid__{
+    &item{
+        color: #fff;
+        border-radius: 10px;
+        // background: #101010;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background linear .3s,
+                    transform ease .4s;
+        font-size: 36px;
+        text-decoration: none;
+        &--color-{
+            &primary{
+                $color: getColor('primary');
+                @include createBox($color);
+
+            }
+            &secondary{
+                $color: getColor('secondary');
+                @include createBox($color);
+            }
+        }
+        &.undone{
+            background: gray;
+            color: #2e2e2e;
+            &:hover{
+                @keyframes shake {
+                    0%{transform: rotate(0deg)}
+                    10%{
+                        transform: rotate(3deg) translateX(10px);
+                    }
+                    20%{transform: rotate(4deg) translateX(5px);}
+                    30%{transform: rotate(-3deg) translateX(-5px)}
+                    50%{transform: rotate(-4deg) translateX(-10px)}
+                    60%{transform: rotate(-1deg) translateX(-5px)}
+                    70%{transform: rotate(0deg) translateX(0px)}
+                    80%{transform: rotate(0deg) translateX(3px)}
+                }
+                animation: shake ease-in-out .5s;
+                background: darken(gray,30%);
+                color: #fff;
+            }
+        }
+        // &.done:hover{
+        //     background: lighten(#101010, 5%);
+          
+
+        // }
+     
+    }
+}
+
+
+

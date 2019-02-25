@@ -1,0 +1,119 @@
+.test{
+    // background: black;
+}
+.curriculum__{
+    &wrapper{
+        width: 100%;
+        // height: 170vh;
+        color: #fff;
+        // background-color: violet;
+    }
+    &container{
+        height: 100%;
+        // background: green;
+        display: grid;
+        grid-template-columns: .3fr .7fr;
+        grid-gap: 10px;
+        // overflow-y: scroll;
+    }
+    &block{
+        padding: 40px;
+        // background: black;
+
+    }
+    &photo{
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    &aside{
+        background: getColor('homework2');
+        // &__header{
+
+        // }
+    }
+    &main{
+        background-color: #e3e3e3;
+        &__textarea{
+            p{
+                color: lighten(#101010,30%);
+                font-size: 1.4rem;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+        &__block{
+            &-title{
+                font-size: 2rem;
+                color: darken(getColor('homework2'), 4%);            }
+            &-icon{
+                font-size: 3.5rem;
+                color: darken(getColor('homework2'), 4%);
+                
+            }
+        }
+    }
+    &name{
+        font-size: 4rem;
+    }
+    &career-container{
+
+        &-inner{
+
+            padding: 30px;
+            width: 70%;
+            border-bottom: 3px solid #fff;
+        }
+        // background: red;
+        &__text{
+            font-size: 1.5rem;
+        }
+    }
+
+    &skill-{
+        &grid{
+            display: grid;
+            grid-template-columns: repeat(3,.33fr);
+            grid-auto-rows: .5fr .5fr;
+            grid-gap: 10px;
+
+        }
+        &item{
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform .3s ease-in;
+            &:hover{
+                transform: scale(1.1);
+            }
+            &__img{
+                height: 100px;
+            }
+        }
+    }
+    &contact{
+        &__title{
+            font-size: 2rem;
+        }
+        &-list{
+            &__item{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                &-icon{
+                    $s:70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: $s;
+                    height: $s;
+                    background: darken(getColor('homework2'),10%);
+                    margin-right: 10px;
+                    padding: 10px;
+                }
+                &-text{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+
+
+.cover{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: getColor('primary'); 
+    position: relative; 
+    transition: all ease .3s;
+
+   
+}
+
+.cover__{
+    &wrapper{
+        position: relative;
+        top: 0;
+        left: 0;
+        background: rgba(255,0,0,.7);
+        width: 100%;
+    
+    }
+    &title{
+        color: #fff;
+        font-size: 3.5rem;
+        font-family: 'Major Mono Display', monospace;
+        font-weight: lighter; 
+        margin-bottom: 1rem;
+    }
+    &subtitle{
+        color: #fff;
+        font-size: .9rem;
+        font-weight: lighter;
+    }
+    &block{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+ 
+}

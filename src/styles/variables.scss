@@ -1,0 +1,13 @@
+$colors: (
+    'primary':#101010,
+    'secondary':#2a2e58,
+    'homework2':#F44336,
+    'homework3':#C2185B
+);
+
+
+@function getColor($key){
+    @if map-has-key($colors, $key){
+        @return map-get($colors,$key);
+    };
+};

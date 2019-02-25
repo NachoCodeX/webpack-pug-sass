@@ -1,0 +1,13 @@
+extends ../../../templates/base.pug
+include ../../../templates/mixins/header.pug
+include ../../../templates/mixins/footer.pug
+
+block wrapper
+    div(class="wrapper")
+        block header
+            +header()(class="header--primary")
+        block content
+            main(class="main main--fill")
+                h1 FORMS
+        block footer
+            +footer

@@ -1,0 +1,26 @@
+extends ../../../templates/base.pug
+include ../../../templates/mixins/header.pug
+include ../../../templates/mixins/footer.pug
+
+block wrapper
+    div(class="wrapper")
+        block header
+            +header()(class="header--primary")
+        block content
+            main(class="main main--fill")
+                div(class="main__header")
+                    h1 Tables
+
+                div(class="flex flex-center")
+                    table(border='1')
+                        thead
+                            tr
+                            th Control Number
+                            th Name
+                        tbody
+                            tr
+                            td 15690190
+                            td Jesús Ignacio Castillo Barrios
+
+        block footer
+            +footer

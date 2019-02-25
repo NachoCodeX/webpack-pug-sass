@@ -1,0 +1,74 @@
+extends ../../../templates/base.pug
+include ../../../templates/mixins/header.pug
+include ../../../templates/mixins/contact-item.pug
+include ../../../templates/mixins/curriculum-skill.pug
+include ../../../templates/mixins/curriculum-headers.pug
+include ../../../templates/mixins/footer.pug
+
+block wrapper
+    div(class="wrapper")
+        block header
+            +header()(class="header--homework2")
+        block content
+            main(class="main main--fill main--scroll")
+                div(class="main__header")
+                    h1(class="main__header__title") Curriculum
+                .curriculum__wrapper
+                    //- p HOLA
+                    .curriculum__container
+                        div(class="curriculum__block curriculum__aside")
+                            div(class="n-mb-lg curriculum__aside__header flex flex-center flex-column")
+                                img(class="curriculum__photo circle" src="/public/img/me.jpg" alt="me")
+                                h1.curriculum__name  Ignacio Castillo
+                            div(class="n-mb-lg curriculum__career-container flex flex-center")
+                                div(class="curriculum__career-container-inner flex flex-center")
+                                    p(class="curriculum__career-container__text") Software Engineering
+                            
+                            div(class="n-mb-lg curriculum__skill-grid flex justify-center")
+                                +curriculumImg('/public/img/vue.png')
+                                +curriculumImg('/public/img/gql.png')
+                                +curriculumImg('/public/img/mongodb.png')
+                                +curriculumImg('/public/img/python.png')
+                                +curriculumImg('/public/img/docker.png')
+                                +curriculumImg('/public/img/nodejs.png')
+                                +curriculumImg('/public/img/socket.png')
+                                +curriculumImg('/public/img/angular.svg')
+                                +curriculumImg('/public/img/ts.png')
+                            div(class="curriculum__contact")
+                                div.flex.flex-center
+                                    h3(class="curriculum__contact__title") Contact
+                                ul(class="curriculum__contact-list")
+                                    +contactItem("4811095288","fas fa-phone")
+                                    +contactItem("4811095288ic@gmail.cok","fas fa-envelope")
+                                    +contactItem("Priv.Pedro Antonio Santos River","fas fa-map-marker")
+                
+
+                        div(class="n-pa-xlg curriculum__main")
+                            .curriculum__main__block.n-mb-lg
+                                +curriculumHeader("Professional Summary")(class="fas fa-user-edit")
+                                main.curriculum__main__textarea
+                                    
+                                    p
+                                        . 
+                                            |Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, laborum exercitationem quam, labore corrupti voluptas laboriosam praesentium quo ullam corporis tempore deserunt optio laudantium consequuntur! Dicta similique molestias vero delectus.
+                                            |Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores nemo perspiciatis similique atque eligendi natus qui deserunt id quos voluptate, excepturi, porro minus. Voluptatibus, laborum dolorum impedit dolorem deserunt quod.
+                                            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores nemo perspiciatis similique atque eligendi natus qui deserunt id quos voluptate, excepturi, porro minus. Voluptatibus, laborum dolorum impedit dolorem deserunt quod.
+                                            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores nemo perspiciatis similique atque eligendi natus qui deserunt id quos voluptate, excepturi, porro minus. Voluptatibus, laborum dolorum impedit dolorem deserunt quod.
+                            .curriculum__main__block.n-mb-lg
+                                +curriculumHeader("Experience")(class="fas fa-user-tie")
+                                main.curriculum__main__textarea
+                                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, laborum exercitationem quam, labore corrupti voluptas laboriosam praesentium quo ullam corporis tempore deserunt optio laudantium consequuntur! Dicta similique molestias vero delectus.
+                                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores nemo perspiciatis similique atque eligendi natus qui deserunt id quos voluptate, excepturi, porro minus. Voluptatibus, laborum dolorum impedit dolorem deserunt quod.
+                            .curriculum__main__block.n-mb-lg
+                                +curriculumHeader("Education")(class="fas fa-graduation-cap")
+                                main.curriculum__main__textarea
+                                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, laborum exercitationem quam, labore corrupti voluptas laboriosam praesentium quo ullam corporis tempore deserunt optio laudantium consequuntur! Dicta similique molestias vero delectus.
+                                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores nemo perspiciatis similique atque eligendi natus qui deserunt id quos voluptate, excepturi, porro minus. Voluptatibus, laborum dolorum impedit dolorem deserunt quod.
+                            .curriculum__main__block
+                                +curriculumHeader("Hightlights")(class="fas fa-rocket")
+                                main.curriculum__main__textarea
+                                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, laborum exercitationem quam, labore corrupti voluptas laboriosam praesentium quo ullam corporis tempore deserunt optio laudantium consequuntur! Dicta similique molestias vero delectus.
+                                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores nemo perspiciatis similique atque eligendi natus qui deserunt id quos voluptate, excepturi, porro minus. Voluptatibus, laborum dolorum impedit dolorem deserunt quod.
+        block footer        
+            +footer
+

@@ -1,0 +1,24 @@
+extends ./templates/base.pug
+include ./templates/mixins/header.pug
+include ./templates/mixins/footer.pug
+block wrapper
+    div(class="wrapper")
+        block header
+            +header()(class="header--primary")
+        block content
+            div(class="cover")
+                div(class="cover__wrapper")
+                    div(class="cover__block")
+                        h1(class="cover__title") Nacho Castillo
+                        p(class="cover__subtitle") Software Engineering
+                div(class="float__wrapper")
+                    div(class="float__container")
+                        a(href="http://www.pornhub.com" target="blank")
+                            <i class="cursor--pointer float__item text--size-xlg text-white fas fa-satellite"></i>
+                    
+            main(class="main")
+                header(class="main__header")
+                    h1(class="main__header__title") Class exercises 
+                include ./templates/class-exercises.pug
+        block footer
+           +footer

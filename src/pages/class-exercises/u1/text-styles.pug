@@ -1,0 +1,103 @@
+extends ../../../templates/base.pug
+include ../../../templates/mixins/header.pug
+include ../../../templates/mixins/footer.pug
+
+block wrapper
+    div(class="wrapper")
+        block header
+            +header()(class="header--primary")
+        block content
+            main(class="main main--fill")
+                h1 Titulo
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                |Ipsam veritatis a ex 
+                b quibusdam
+                |voluptate? Cumque eum consequuntur 
+                |dolorem aspernatur dolore incidunt nihil, libero laboriosam, 
+                |pariatur eius reprehenderit dolorum, illum sint.
+                |Lorem ipsum dolor sit amet 
+                strong consectetur 
+                |adipisicing elit. 
+                |Quia cupiditate delectus accusantium, nisi laudantium molestias, 
+                |amet facilis asperiores laborum in aliquam. Impedit hic aperiam 
+                |aliquid numquam nihil accusantium delectus optio.
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                |Ipsam veritatis a ex 
+                i quibusdam voluptate?
+                |Cumque eum consequuntur 
+                |dolorem aspernatur dolore incidunt nihil, libero laboriosam, 
+                |pariatur eius reprehenderit dolorum, illum sint.
+                |Lorem ipsum dolor 
+                em sit amet consectetur 
+                |adipisicing elit. 
+                |Quia cupiditate delectus accusantium, nisi laudantium molestias, 
+                |amet facilis asperiores laborum in aliquam. Impedit hic aperiam 
+                |aliquid numquam nihil accusantium delectus optio.
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                |Ipsam veritatis a ex 
+                u quibusdam voluptate?
+                |Cumque eum consequuntur 
+                |dolorem aspernatur dolore incidunt nihil, libero laboriosam, 
+                |pariatur eius reprehenderit dolorum, illum sint.
+                |Lorem ipsum dolor 
+                s sit amet consectetur
+                |adipisicing elit. 
+                |Quia cupiditate delectus accusantium, nisi laudantium molestias, 
+                |amet facilis asperiores laborum in aliquam. Impedit hic aperiam 
+                mark aliquid numquam nihil
+                |accusantium delectus optio.
+                |Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                code Sint quibusdam beatae eum odit assumenda dolorum omnis,
+                |provident nihil eveniet nesciunt placeat. Enim ducimus 
+                |praesentium quod adipisci culpa nemo quibusdam. Non.
+                pre Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                h2 Formulas
+                ul
+                    li H20
+                    li CO2
+                    li
+                        |A
+                        sup 2
+                        |+B
+                        sup 2
+                        |=C
+                        sup 2
+                p
+                |Normal text 
+                small Small text
+                h1
+                strong Resumen
+                li Las negritas se usan con
+                    code &lt;b&gt; 
+                    |o 
+                    code &lt;strong&gt;
+                li
+                    | Las cursivas se usan con 
+                    code &lt;i&gt;
+                    |  o 
+                    code &lt;em&gt;
+                li
+                    | El subrayado se usa con 
+                    code &lt;u&gt;
+                li
+                    | El tachado se usa con 
+                    code &lt;s&gt;
+                li
+                    | El resaltado se usa con 
+                    code &lt;mark&gt;
+                li
+                    | El texto preformateado se usa con 
+                    code &lt;pre&gt;
+                li
+                    | El codigo se usa con 
+                    code &lt;code&gt;
+                li
+                    | Las letras pequeñas las usamos con 
+                    code &lt;smal&gt;
+                li
+                    | Para subindices usamos 
+                    code &lt;sub&gt;
+                    |  y para superindices usamos 
+                    code &lt;sup&gt;  
+        block footer
+            +footer  
