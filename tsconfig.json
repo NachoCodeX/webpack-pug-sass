@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/js/",
+    "lib": ["es5", "dom"],
+    "allowJs": true,
+    "target": "es6",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": ["./node_modules"]
+}

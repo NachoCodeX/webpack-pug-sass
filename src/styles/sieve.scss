@@ -1,0 +1,123 @@
+@import './variables';
+.sieve- {
+  &wrapper {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    height: 100vh;
+  }
+  &aside {
+    background-color: #212121;
+    padding: 10px;
+    // height: 720px;
+
+    &- {
+      &otheractions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+      }
+      &btnaction {
+        display: block;
+        // height: 60px;
+        // width: 60px;
+        color: #fff;
+        outline: none;
+        border: none;
+        transition: all ease 0.3s;
+        &--text--lg {
+          font-size: 3rem;
+        }
+        &--secondary {
+          background-color: lighten(#212121, 10%);
+        }
+        &--remove {
+          background-color: lighten(getColor('homework2'), 10%);
+        }
+        &--primary {
+          border-radius: 50%;
+          background-color: getColor('u2homework1');
+          &:hover {
+            background-color: lighten(getColor('u2homework1'), 10%);
+            transform: scale(1.1);
+          }
+        }
+        cursor: pointer;
+      }
+      &actions {
+        &- {
+          &grid {
+            // background: ;
+            margin-top: 10px;
+            display: grid;
+            height: 250px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 10px;
+          }
+        }
+      }
+      &title {
+        // color: #fff;
+        font-size: 3rem;
+      }
+
+      &subtitle {
+        font-size: 2rem;
+        margin-top: 10px;
+        // text-align: cente;
+      }
+      &text {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        &--hightlight {
+          color: getColor('u2homework1');
+        }
+      }
+    }
+  }
+  &main {
+    background-color: darken(getColor('u2homework1'), 10%);
+    padding: 10px;
+    overflow-y: scroll;
+    // height: 720px;
+  }
+  &field {
+    width: 100%;
+  }
+  &input {
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    background-color: lighten(#212121, 20%);
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+
+  &grid {
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    // grid-auto-rows: 100%;
+    grid-gap: 10px;
+    height: 100%;
+  }
+
+  &item {
+    // background-color: lighten(getColor('u2homework1'), 20%);
+    background-color: #ffdd78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #212121;
+    font-size: 2rem;
+    &--circle {
+      border-radius: 50%;
+    }
+    // height: ;
+  }
+}

@@ -1,0 +1,52 @@
+extends ../../../templates/base.pug
+include ../../../templates/mixins/header.pug
+include ../../../templates/mixins/footer.pug
+
+
+block wrapper
+    div(class="wrapper")
+    block header
+        +header()(class="header--u2homework1")
+    block content
+        div(class="main")
+            div(class="main__header")
+                h1(class="main__header__title") Sieve of Eratosthenes
+            .sieve-wrapper
+                aside.sieve-aside
+                    h2.sieve-aside-title.text-white Instructions
+                    div
+                        p(class="text-white sieve-aside-text")
+                            |You must type a number between 20 - 150 in the input below,
+                            span.sieve-aside-text.sieve-aside-text--hightlight  please don't be a fool person only type NUMBERS.
+                        .sieve-field
+                            input(id="sieve-input" placeholder="Type a number" value=20 class="sieve-input" type="number" min=20 max=150)
+                    .sieve-aside-actions
+                        p(class="sieve-aside-subtitle text-white") Multiplies of
+                        .sieve-aside-actions-grid
+                            button(name="action" data-type="2" class="sieve-aside-btnaction sieve-aside-btnaction--primary sieve-aside-btnaction--text--lg") 2
+                            button(name="action" data-type="3" class="sieve-aside-btnaction sieve-aside-btnaction--primary sieve-aside-btnaction--text--lg")  3
+                            button(name="action" data-type="4" class="sieve-aside-btnaction sieve-aside-btnaction--primary sieve-aside-btnaction--text--lg") 4
+                            button(name="action" data-type="5" class="sieve-aside-btnaction sieve-aside-btnaction--primary sieve-aside-btnaction--text--lg") 5
+                            button(name="action" data-type="6" class="sieve-aside-btnaction sieve-aside-btnaction--primary sieve-aside-btnaction--text--lg") 6
+                            button(name="action" data-type="7" class="sieve-aside-btnaction sieve-aside-btnaction--primary sieve-aside-btnaction--text--lg") 7
+                            button(name="action" data-type="8" class="sieve-aside-btnaction sieve-aside-btnaction--primary sieve-aside-btnaction--text--lg") 8
+                            button(name="action" data-type="9" class="sieve-aside-btnaction sieve-aside-btnaction--primary sieve-aside-btnaction--text--lg") 9
+                        p(class="sieve-aside-subtitle text-white") Other actions
+                        .sieve-aside-otheractions
+                            button#prime.sieve-aside-btnaction.sieve-aside-btnaction--secondary Prime numbers  
+                            button#clear.sieve-aside-btnaction.sieve-aside-btnaction--text--lg.sieve-aside-btnaction--remove  
+                                <i class="fas fa-broom"></i>
+
+
+                            //- button.sieve-aside-btnaction prime
+
+                main.sieve-main
+                    div#sieve-board.sieve-grid
+
+
+
+    block footer
+        +footer
+block scripts
+    script(src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js")
+    script(src="/js/app.js")
